@@ -1,0 +1,49 @@
+<!-- Toolbar -->
+<mat-toolbar >
+    <h2 class="margin">Small World</h2>
+</mat-toolbar>
+
+<!-- Dropdowns Agent Name/Country -->
+<div class="input-fields">
+    <div class="padding">
+        <mat-form-field>
+            <mat-label>Agent Name</mat-label>
+            <mat-select>
+                <mat-option value="1">Dolor</mat-option>
+                <mat-option value="2">Mike</mat-option>
+                <mat-option value="3">Calvin</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="padding">
+        <mat-form-field>
+            <mat-label>Country</mat-label>
+            <mat-select>
+                <mat-option value="1">France</mat-option>
+                <mat-option value="2">Canada</mat-option>
+                <mat-option value="3">Brazil</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<!-- Side navigation -->
+<mat-sidenav-container>
+    <!-- List of Menu Items -->
+    <mat-sidenav #sidenav  mode="side" opened="true" >
+        <mat-list>
+            <div *ngFor="let menuItem of menuItems" >
+                <mat-list-item class="color-change" >
+                    <mat-icon class="pd" matListItemAvatar>{{menuItem.logo}}</mat-icon>
+                    <h3 class="align" matListItemTitle>{{menuItem.title}}</h3>
+                </mat-list-item>
+            </div>
+        </mat-list>
+    </mat-sidenav>
+    <!-- Main Content -->
+    <mat-sidenav-content>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

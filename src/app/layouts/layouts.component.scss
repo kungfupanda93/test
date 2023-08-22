@@ -1,0 +1,36 @@
+  mat-sidenav {
+    width: 20%;
+    border-right: none;
+    background: white;
+  }
+  
+  .align{
+    text-align: left;
+    margin-top: 16px;
+}
+.pd{
+    display: flex;
+    align-items: center;
+}
+.color-change:hover{
+    color: rebeccapurple;
+}
+.color-change{
+    color: black;
+}
+.container{
+    padding: 10px;
+}
+.input-fields{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+.padding{
+    padding:5px;
+}
+.margin{
+    margin: 0 !important;
+}
